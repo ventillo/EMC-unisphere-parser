@@ -12,7 +12,7 @@
 
 ##DESCRIPTION
 ###Options and functionality:
-``
+
     -mode  This switch controls the main functionality of the script 
            (i.e. which part of the unisphere we want to see). It accepts several 
            predefined arguments.
@@ -50,9 +50,9 @@
             [-spa <EMC_unisphere_address>]
            Brief performance health check. Includes response times and Write 
            pending %
-``           
+          
 ###Argument explanation and details:
-``    
+   
     -spa   Unisphere address in format https://10.0.0.1:8443/spa or /univmax
            If you specify the -spa, it implies you use the full SID in -sid
            as well. Partial SIDs can only work within AT&T environment
@@ -65,7 +65,7 @@
            In simple terms, how many hours you want to go back in the report
     -fa    FA port ID. Format: FA-2G
     -da    DA port ID. Format: DA-1A
-``
+
 ##EXAMPLES
     vmax.py -sid 1639 -mode DET -fa FA-2G -time 24
     vmax.py -mode CHECK
