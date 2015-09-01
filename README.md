@@ -1,8 +1,8 @@
 # EMC-unisphere-parser
-NAME
+##NAME
     vmax.py - CLI tool gathering performance / other data from an EMC unisphere.
 
-SYNOPSIS
+##SYNOPSIS
     vmax.py -mode <CHECK|DET|LIST|FAS|DAS|X> 
             [-sid <Symmetrix_ID>] 
             [-spa <EMC_unisphere_address> 
@@ -10,8 +10,8 @@ SYNOPSIS
             [-fa <FA_PORT>] 
             [-da <DA_PORT>]    
 
-DESCRIPTION
-    Options and functionality:
+##DESCRIPTION
+###Options and functionality:
 
     -mode  This switch controls the main functionality of the script 
            (i.e. which part of the unisphere we want to see). It accepts several 
@@ -50,9 +50,9 @@ DESCRIPTION
             [-spa <EMC_unisphere_address>]
            Brief performance health check. Includes response times and Write 
            pending %
-           
-    Argument explanation and details:
-    
+          
+###Argument explanation and details:
+   
     -spa   Unisphere address in format https://10.0.0.1:8443/spa or /univmax
            If you specify the -spa, it implies you use the full SID in -sid
            as well. Partial SIDs can only work within AT&T environment
@@ -66,11 +66,11 @@ DESCRIPTION
     -fa    FA port ID. Format: FA-2G
     -da    DA port ID. Format: DA-1A
 
-EXAMPLES
+##EXAMPLES
     vmax.py -sid 1639 -mode DET -fa FA-2G -time 24
     vmax.py -mode CHECK
     vmax.py -mode LIST -spa https://ulpd150.madc.att.com:8443/univmax
     vmax.py -mode X -sid 5024
 
-SEE ALSO
-    EMC.com 
+##SEE ALSO
+[EMC](EMC.com) 
